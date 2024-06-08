@@ -5,7 +5,6 @@
     <title>React Router</title>
     <script type="text/javascript">
         var pathSegmentsToKeep = 1;
-
         var l = window.location;
         l.replace(
             l.protocol +
@@ -21,6 +20,7 @@
             (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
             l.hash
         );
+        console.log("404 ->", l);
     </script>
 </head>
 <body></body>
