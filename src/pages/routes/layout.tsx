@@ -4,13 +4,13 @@ import {Outlet} from "react-router-dom";
 
 function Layout() {
   return (
-    <Box className="root" h={"100vh"}>
+    <Box className="root">
       <Group className="navbar" align="center" gap="xl" justify="center" wrap="nowrap">
-        <Button component="a" href="/">Kezdőlap</Button>
-        <Button component="a" href="/about">Rólunk</Button>
+        <Button component="a" href="/crossfit/">Kezdőlap</Button>
+        <Button component="a" href="/crossfit/about">Rólunk</Button>
         <Image src={Logo} h={80} w="auto"></Image>
-        <Button component="a" href="/prices">Áraink</Button>
-        <Button component="a" href="/contact">Elérhetőségeink</Button>
+        <Button component="a" href="/crossfit/prices">Áraink</Button>
+        <Button component="a" href="/crossfit/contact">Elérhetőségeink</Button>
       </Group>
       <Outlet></Outlet>
     </Box>

@@ -8,13 +8,11 @@ export const AppRouter = () => {
   const Prices = lazy(() => import("./routes/prices.tsx"));
   const Contact = lazy(() => import("./routes/contact.tsx"));
   return (
-    <>
-      <Route path="/" element={<Layout />}>
+      <Route path="/crossfit/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path={"/about"} element={<About />} />
-        <Route path={"/prices"} element={<Prices />} />
-        <Route path={"/contact"} element={<Contact />} />
+        <Route path={"/crossfit/about"} element={<About />} />
+        <Route path={"/crossfit/prices"} element={<Prices />} />
+        <Route path={"/crossfit/contact"} element={<Contact />} />
       </Route>
-    </>
   );
 };

@@ -4,7 +4,7 @@ import { MantineProvider } from '@mantine/core'
 import {RouterProvider, createBrowserRouter, createRoutesFromElements} from "react-router-dom";
 import {AppRouter} from "./pages/AppRouter.tsx";
 
-export const router = createBrowserRouter(createRoutesFromElements(AppRouter()), {basename: '/crossfit/'})
+export const router = createBrowserRouter(createRoutesFromElements(AppRouter()), {basename: import.meta.env.DEV ? "/" : "/crossfit/"})
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <MantineProvider defaultColorScheme="light">
