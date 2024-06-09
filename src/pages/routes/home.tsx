@@ -1,8 +1,9 @@
-import {Box, Text} from "@mantine/core";
+import {Box} from "@mantine/core";
+import Intro from "./cards/intro"
 function Home() {
   return (
     <Box>
-      <Text>Home</Text>
+      <Intro></Intro>
     </Box>
   )
 }
